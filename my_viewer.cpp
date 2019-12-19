@@ -103,7 +103,192 @@ void MyViewer::rotate(int num, int o) {
 			manip12->initial_mat(tran * manip12->mat());
 		}
 	}
+	if (num == 14 && o == 1) {
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc , zinc+5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc , zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 14 && o == -1) {
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+		if (num == 14 && o == 1) {
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc , zinc+5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc , zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 14 && o == -1) {
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 1 && o == 1) {
+		for (int ind = 0; ind <= 1; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 1; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 1 && o == -1) {
+		for (int ind = 0; ind <= 1; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 0; ind <= 1; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+
+	if (num == 2 && o == 1) {
+		for (int ind = 1; ind <= 3; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 1; ind <= 3; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 2 && o == -1) {
+		for (int ind = 1; ind <= 3; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 1; ind <= 3; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 3 && o == 1) {
+		for (int ind = 4; ind <= 4; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 4; ind <= 4; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 3 && o == -1) {
+		for (int ind = 4; ind <= 4; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 4; ind <= 4; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 4 && o == 1) {
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc + 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 4 && o == -1) {
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc, yinc, zinc - 5);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 5 && o == 1) {
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc+5, yinc, zinc);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc+5, yinc, zinc);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
+	if (num == 5 && o == -1) {
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = e->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc-5, yinc, zinc);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+		for (int ind = 5; ind <= 5; ind++) {
+			SnManipulator* manip12 = sh->get<SnManipulator>(ind); // access one of the manipulators
+			tran.translation(xinc-5, yinc, zinc);
+			manip12->initial_mat(tran * manip12->mat());
+		}
+	}
+
 }
+
+
 
 void MyViewer::build_ui()
 {
@@ -137,7 +322,7 @@ void MyViewer::add_model(SnShape* s, GsVec p)
 }
 
 void MyViewer::camera_view() {// camrera view that flips wiggles and moves on the z and x axis
-	for (float t = 0; t <= 6 * pi; t += (2 * pi) / 1000) {
+	for (float t = 0; t <= 0.000001 * pi; t += (2 * pi) / 1000) {
 		camera().eye.x = (float)cos(6 * t);
 		camera().eye.z = -6 * t;
 		render();
@@ -221,7 +406,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s1s;
 	s1s = new SnPrimitive(GsPrimitive::Box, 40, 40, 10);
 	s1s->prim().material.diffuse = GsColor::black;
-	add_model(s1s, GsVec(200, 100, 0));
+	add_model(s1s, GsVec(-200, 100, 0));
 	SnManipulator* manip = e->get<SnManipulator>(0); // access one of the manipulators
 	manip->visible(false);
 
@@ -236,7 +421,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s3s;
 	s3s = new SnPrimitive(GsPrimitive::Sphere, 40, 40, 10);
 	s3s->prim().material.diffuse = GsColor::black;
-	add_model(s3s, GsVec(300, 100, 0));
+	add_model(s3s, GsVec(-95, 100, 0));
 	SnManipulator* manip3 = e->get<SnManipulator>(2); // access one of the manipulators
 	manip3->visible(false);
 
@@ -245,7 +430,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s4s;
 	s4s = new SnPrimitive(GsPrimitive::Capsule, 40, 40, 10);
 	s4s->prim().material.diffuse = GsColor::black;
-	add_model(s4s, GsVec(400, 100, 0));
+	add_model(s4s, GsVec(-5, 100, 0));
 	SnManipulator* manip4 = e->get<SnManipulator>(3); // access one of the manipulators
 	manip4->visible(false);
 
@@ -253,7 +438,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s5s;
 	s5s = new SnPrimitive(GsPrimitive::Cylinder, 40, 40, 40);
 	s5s->prim().material.diffuse = GsColor::black;
-	add_model(s5s, GsVec(500, 100, 0));
+	add_model(s5s, GsVec(95, 100, 0));
 	SnManipulator* manip5 = e->get<SnManipulator>(4); // access one of the manipulators
 	manip5->visible(false);
 
@@ -261,23 +446,30 @@ void MyViewer::build_scene()
 	SnPrimitive* s6s;
 	s6s = new SnPrimitive(GsPrimitive::Sphere, 40, 40, 0);
 	s6s->prim().material.diffuse = GsColor::black;
-	add_model(s6s, GsVec(600, 100, 0));
+	add_model(s6s, GsVec(200, 100, 0));
 	SnManipulator* manip6 = e->get<SnManipulator>(5); // access one of the manipulators
 	manip6->visible(false);
 
 
 	SnPrimitive* s7s;
-	s7s = new SnPrimitive(GsPrimitive::Sphere, 0, 0, 0);
+	s7s = new SnPrimitive(GsPrimitive::Box, 0, 0, 0);
 	s7s->prim().material.diffuse = GsColor::black;
-	add_model(s7s, GsVec(600, 100, 0));
+	add_model(s7s, GsVec(0, -50, 0));
 	SnManipulator* manip11 = e->get<SnManipulator>(10); // access one of the manipulators
 	manip11->visible(false);
+
+	/*SnPrimitive* s8s;
+	s8s = new SnPrimitive(GsPrimitive::Sphere, 0, 0, 0);
+	s8s->prim().material.diffuse = GsColor::black;
+	add_model(s7s, GsVec(600, 100, 0));
+	SnManipulator* manip7 = e->get<SnManipulator>(10); // access one of the manipulators
+	manip7->visible(false);*/
 
 	//OBJECTS
 	SnPrimitive* s1;
 	s1 = new SnPrimitive(GsPrimitive::Box, 40, 40, 10);
-	s1->prim().material.diffuse = GsColor::red;
-	add_shadow_model(s1, GsVec(200, 100, 0));
+	s1->prim().material.diffuse = GsColor::white;
+	add_shadow_model(s1, GsVec(-200, 100, 0));
 	SnManipulator* manips = e->get<SnManipulator>(0); // access one of the manipulators
 	manips->visible(false);
 	manips->initial_mat(shadowMat* manip->mat());
@@ -285,7 +477,7 @@ void MyViewer::build_scene()
 
 	SnPrimitive* s2;
 	s2 = new SnPrimitive(GsPrimitive::Box, 0, 0, 0);
-	s2->prim().material.diffuse = GsColor::red;
+	s2->prim().material.diffuse = GsColor::white;
 	add_shadow_model(s2, GsVec(200, 100, 0));
 	SnManipulator* manip2s = e->get<SnManipulator>(1); // access one of the manipulators
 	manip2s->visible(false);
@@ -294,8 +486,8 @@ void MyViewer::build_scene()
 
 	SnPrimitive* s3;
 	s3 = new SnPrimitive(GsPrimitive::Sphere, 40, 40, 10);
-	s3->prim().material.diffuse = GsColor::red;
-	add_shadow_model(s3, GsVec(300, 100, 0));
+	s3->prim().material.diffuse = GsColor::brown;
+	add_shadow_model(s3, GsVec(-95, 100, 0));
 	SnManipulator* manip3s = e->get<SnManipulator>(2); // access one of the manipulators
 	manip3s->visible(false);
 	manip3s->initial_mat(shadowMat* manip3->mat());
@@ -304,7 +496,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s4;
 	s4 = new SnPrimitive(GsPrimitive::Capsule, 40, 40, 10);
 	s4->prim().material.diffuse = GsColor::yellow;
-	add_shadow_model(s4, GsVec(400, 100, 0));
+	add_shadow_model(s4, GsVec(-5, 100, 0));
 	SnManipulator* manip4s = e->get<SnManipulator>(3); // access one of the manipulators
 	manip4s->visible(false);
 	manip4s->initial_mat(shadowMat* manip4->mat());
@@ -313,7 +505,7 @@ void MyViewer::build_scene()
 	SnPrimitive* s5;
 	s5 = new SnPrimitive(GsPrimitive::Cylinder, 40, 40, 40);
 	s5->prim().material.diffuse = GsColor::green;
-	add_shadow_model(s5, GsVec(500, 100, 0));
+	add_shadow_model(s5, GsVec(95, 100, 0));
 	SnManipulator* manip5s = e->get<SnManipulator>(4); // access one of the manipulators
 	manip5s->visible(false);
 	manip5s->initial_mat(shadowMat* manip5->mat());
@@ -321,19 +513,30 @@ void MyViewer::build_scene()
 	SnPrimitive* s6;
 	s6 = new SnPrimitive(GsPrimitive::Sphere, 40, 40, 0);
 	s6->prim().material.diffuse = GsColor::blue;
-	add_shadow_model(s6, GsVec(600, 100, 0));
+	add_shadow_model(s6, GsVec(200, 100, 0));
 	SnManipulator* manip6s = e->get<SnManipulator>(5); // access one of the manipulators
 	manip6s->visible(false);
 	manip6s->initial_mat(shadowMat* manip6->mat());
 
 
 	SnPrimitive* s7;
-	s7 = new SnPrimitive(GsPrimitive::Sphere, 0, 0, 0);
-	s7->prim().material.diffuse = GsColor::blue;
-	add_shadow_model(s7, GsVec(600, 100, 0));
-	SnManipulator* manip11s = sh->get<SnManipulator>(10); // access one of the manipulators
+	s7 = new SnPrimitive(GsPrimitive::Box, 350, 1, 350);
+	s7->prim().material.diffuse = GsColor::darkred;
+	add_shadow_model(s7, GsVec(0, -15, 0));
+	SnManipulator* manip11s = e->get<SnManipulator>(10); // access one of the manipulators
 	manip11s->visible(false);
 	manip11s->initial_mat(shadowMat* manip11->mat());
+
+	/*SnPrimitive* s8;
+	s8 = new SnPrimitive(GsPrimitive::Sphere, 0, 0, 0);
+	s8->prim().material.diffuse = GsColor::blue;
+	add_shadow_model(s8, GsVec(6000, 100, 0));
+	SnManipulator* manip7s = e->get<SnManipulator>(10); // access one of the manipulators
+	manip7s->visible(false);
+	manip7s->initial_mat(shadowMat* manip7->mat());*/
+
+
+
 
 
 }
@@ -428,6 +631,21 @@ int MyViewer::handle_keyboard(const GsEvent& e)
 	case GsEvent::KeyDown:rotate(12, -1); render(); return 1;
 	case GsEvent::KeyRight:rotate(13, 1); render(); return 1;
 	case GsEvent::KeyLeft:rotate(13, -1); render(); return 1;
+	case 'q':rotate(1, 1); render(); return 1;
+	case 'w':rotate(1, -1); render(); return 1;
+	case 'e':rotate(2, 1); render(); return 1;
+	case 'r':rotate(2, -1); render(); return 1;
+	case 't':rotate(3, 1); render(); return 1;
+	case 'y':rotate(3, -1); render(); return 1;
+	case 'u':rotate(4, 1); render(); return 1;
+	case 'i':rotate(4, -1); render(); return 1;
+
+	case '2':rotate(5, 1); render(); return 1;
+	case '1':rotate(5, -1); render(); return 1;
+
+
+	case 'z':rotate(14, 1); render(); return 1;
+	case 'x':rotate(14, -1); render(); return 1;
 	case GsEvent::KeySpace:
 	{ cam = !cam;
 	if (!cam) {
